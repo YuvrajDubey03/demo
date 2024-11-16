@@ -1,0 +1,394 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #fcf5f5;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.logo img{
+    width: 192px;
+    height: 34px;
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #232323;
+    text-decoration: none;
+    
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    color: salmon;
+
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.mega-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff1f1;
+    width: auto;
+    padding: 20px;
+    column-gap: 50px;
+    column-count: 3;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+}
+.column p{
+    color: #232323;
+}
+
+.column h3 {
+    color: #fff5f5;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.column a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+.column a img{
+    width: 100%;
+}
+
+
+.dropdown:hover .mega-dropdown {
+    display: block;
+}
+.hero{
+    max-width: 1680;
+    background: url('../Images/hero-bg.jpg');
+    height: 600px;
+    background-size: cover;
+   text-align: center;
+   padding-top: 250px; 
+   color: white;
+   align-items: center;
+   
+
+}
+.hero button{
+    border-radius: 8px;
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+    padding: 20px 40px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+.hero button:hover{
+    background-color: red;
+}
+   
+.sec-main{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 800;
+   
+}
+.grid-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.grid-items{
+    width: 400px;
+    gap: 10px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(191, 190, 190);
+    cursor: pointer;
+}
+.grid-items img{
+    background-size: cover;
+    width: 400px;
+    
+border-bottom: #232323 1px;
+}
+.description{
+    width:400px;
+    padding-bottom: 30px;
+    background-color:white;
+    font-size: 18px;
+    color: #7397c6;
+
+    
+}
+.extra{
+    background: url('../Images/extra.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    height: 500px;
+    margin-top: 100px;
+    color: white;
+}
+.row1 h2 {
+    padding-bottom: 10px;
+}
+.row1 p {
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+.row2 img {
+    width: 400px;
+    height: 500px;
+    
+}
+.become{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.become1{
+    background-color: rgb(210, 227, 234);
+    width: 630px;
+    height: 300px;
+    display: flex;
+    
+    padding-left: 20px;
+    gap: 100px;
+}
+.become2{
+    background-color: rgb(241, 241, 226);
+    width: 630px;
+    height: 300px;
+    display: flex;
+    gap: 100px;
+}
+.become1 img{
+    height: 300px;
+    width: 250px;
+}
+.become2 img{
+    height: 300px;
+    width: 250px;
+}
+.become1 button{
+    background-color: salmon;
+    color: #fcf5f5;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+.become1 button:hover{
+background-color: red;
+}
+
+.become2 button{
+    background-color: salmon;
+    color: #fcf5f5;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-left: 40px;
+    border: 0;
+    cursor: pointer;
+}
+.become2 button:hover{
+    background-color: red;
+}
+.become1 h2{
+   padding-top: 50px;
+   padding-left: 40px;
+
+}
+.become2 h2{
+    padding-top: 50px;
+   padding-left: 40px;
+}
+.become1 p{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+.become2 p{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+.restaurents{
+    display: flex;
+    flex-wrap: wrap;
+   margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.restaurents div{
+    box-shadow: 0 0 4px rgb(226, 215, 215);
+    border-radius: 10px;
+}
+.restlogo{
+    width: 90%;
+    height: 90%;
+    
+}
+.boxreview {
+    background-color: #f6f9fc;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.comments{
+    width: 600px;
+    height: 300;
+    
+    
+    
+}
+.textc{
+    box-shadow: 0 0 6px rgb(226, 215, 215);
+    padding: 40px;
+    
+}
+.texti img{
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+.texti {
+    display: flex;
+    
+   
+    
+}
+.footer{
+    padding-top: 50px;
+    display: flex  ;
+    background-color: #2b3445;
+    color: white;
+    justify-content: center;
+    gap: 100px;
+}
+.foot ul li {
+    list-style: none;
+}
+.foot ul li a {
+    text-decoration: none;
+    color:rgba(244, 239, 239, 0.763)
+}
+.foot h2{
+    padding-left: 30px;
+}
+.foot ul li a:hover{
+    color: white;
+}
+.footerbase{
+    background-color: #2b3445;
+   text-align: center;
+    justify-content: center;
+    color:rgba(244, 239, 239, 0.763);
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+.footerbase::before{
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: white;
+    width: 50%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.foot1 li {
+    list-style: none;
+    margin-left: 20px;
+  
+
+}
+
+.foot1 li a {
+    text-decoration: none;
+    color:rgba(244, 239, 239, 0.763)
+}
+.foot1 ul{
+    display: flex;
+}
+.mega-dropdown img{
+    max-width: 100%;
+}
+
+.yuvraaj-hr{
+    width: 50%;
+    margin: auto;
+}
+.fb{
+    display: flex;
+    justify-content: space-around   ;
+}
+#language{
+    padding: 5px 10px ;
+    background-color: transparent;
+    margin-top: 20px;
+}
+#language:hover{
+    background-color: white;
+}
